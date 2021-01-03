@@ -2778,7 +2778,7 @@
         this.history.paths = R.getPathValues(), this.history.scrollToSlide(this.params.speed, this.history.paths.value, !1)
       },
       getPathValues: function () {
-        var e = J.location.pathname.slice(1).split("https://diegonavarro.co/").filter(function (e) {
+        var e = J.location.pathname.slice(1).split("http://diegonavarro.co/").filter(function (e) {
             return "" !== e
           }),
           t = e.length;
@@ -6804,7 +6804,7 @@ function (a, b) {
     c = d,
     h = m,
     l = g,
-    v = "https://diegonavarro.co/",
+    v = "http://diegonavarro.co/",
     p = new RegExp(["(\\\\.)", "(?:\\:(\\w+)(?:\\(((?:\\\\.|[^\\\\()])+)\\))?|\\(((?:\\\\.|[^\\\\()])+)\\))([+*?])?"].join("|"), "g");
 
   function d(n, t) {
