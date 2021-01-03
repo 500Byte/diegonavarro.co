@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rubenz – Creative Minimal AJAX Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta content="telephone=no" name="format-detection">
+    <meta name="HandheldFriendly" content="true">
+    <style>
+      html{font-size:16px;-moz-osx-font-smoothing:grayscale;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;overflow-x:hidden;width:100%;height:100%}body{position:relative;width:100%;min-width:320px;font-family:Poppins,sans-serif;background-color:#c5c6c9;color:#333;font-size:100%;line-height:1.75;overflow-x:hidden;word-wrap:break-word}.container-fluid{padding-left:120px;padding-right:120px}.row{margin-left:-25px;margin-right:-25px}.col,[class*=col-]{padding-left:25px;padding-right:25px}.page-wrapper{z-index:50}@media screen and (max-width:1400px){.container-fluid{padding-left:80px;padding-right:80px}}@media screen and (max-width:1200px){.container-fluid{padding-left:50px;padding-right:50px}}@media screen and (max-width:991px){.container-fluid{padding-left:30px;padding-right:30px}.row{margin-left:-15px;margin-right:-15px}.col,[class*=col-]{padding-left:15px;padding-right:15px}}.bg-light{background-color:#f2f2f2}.bg-dark{background-color:#181818}.bg-dark-2{background-color:#232323}.cursor{position:fixed;z-index:10000;display:none}.cursor__follower{position:relative;width:60px;height:60px;border-radius:100%;overflow:hidden}.cursor__follower svg{position:absolute;top:0;left:0;width:100%;height:100%}.cursor__follower svg #inner,.cursor__follower svg #outter{fill:none;stroke-linecap:butt}.cursor__follower svg #inner{stroke-width:2px;stroke:#888;opacity:.6}.cursor__follower svg #outter{stroke-width:4px;stroke:#c5c6c9}.figure-property{width:100%}.figure-property__list{list-style-type:none;padding:0;margin:0}.figure-property__item{display:block;padding-top:8px;padding-bottom:8px}.header{position:absolute;top:0;left:0;right:0;z-index:500;padding-top:70px}.header_fixed{position:fixed}.header__burger{position:relative;display:flex;flex-direction:column;align-items:flex-end;justify-content:center;width:40px;height:40px;z-index:600}.header__burger-line{display:block;width:100%;background-color:#333;height:2px;margin:4px 0;transform-origin:right center}.header__burger-line:nth-child(1){max-width:40px}.header__burger-line:nth-child(2){max-width:30px}.header__wrapper-overlay-menu{display:flex;position:fixed;top:0;left:0;right:0;bottom:0;z-index:500;overflow-x:hidden;overflow-y:auto;-webkit-overflow-scrolling:touch;opacity:0;visibility:hidden}.header__wrapper-menu{display:flex;align-items:flex-end;padding:120px 120px 40px;width:100%}.header__wrapper-overlay-widgets{display:flex;flex-direction:column;justify-content:flex-end;flex:1 1 auto;padding:120px 120px 60px}.header__wrapper-property{margin-bottom:50px;font-size:16px}.header__wrapper-property:last-of-type{margin-bottom:0}.header__overlay-menu-back{position:absolute;top:70px;left:110px;font-size:45px!important;color:#fff;z-index:600}.header__col-left{position:relative}@media screen and (max-width:1400px){.header{padding-top:50px}.header__wrapper-menu{padding:80px 80px 40px}.header__wrapper-overlay-widgets{padding:80px 80px 60px}.header__overlay-menu-back{top:50px;left:70px}}@media screen and (max-width:1200px){.header{padding-top:40px}.header__wrapper-menu{padding:50px 50px 30px}.header__wrapper-overlay-widgets{padding:50px 50px 40px}.header__wrapper-property{margin-bottom:40px}.header__overlay-menu-back{top:40px;left:40px}}@media screen and (max-width:991px){.header__burger-line{margin:3px 0}.header__burger-line:nth-child(1){max-width:30px}.header__burger-line:nth-child(2){max-width:20px}.header__wrapper-menu{padding:0;width:100%;padding:50px 0}.header__wrapper-overlay-menu{flex-wrap:wrap;text-align:center;padding:50px 30px}.header__wrapper-overlay-widgets{border-top:1px solid rgba(214,215,217,.2);background-color:initial;padding:50px 0}.header__overlay-menu-back{top:25px;left:25px;font-size:33px!important}}@media screen and (max-width:991px){.header{padding-top:20px}}.logo{display:block;font-family:Oswald,sans-serif;font-size:16px;line-height:1.3;font-weight:500;letter-spacing:1px;text-transform:uppercase;color:#333}a.logo{background-image:none}.menu-overlay{position:relative;list-style-type:none;padding:0;margin:0;width:100%;max-width:700px}.menu-overlay a{background-image:none}.menu-overlay>li{display:block}.menu-overlay>li>a{display:block;font-size:54px;line-height:2;font-weight:600;color:#fff}.menu-overlay>li>a span{display:inline-block;position:relative}.menu-overlay>li:not(.menu-item-has-children)>a span{display:inline-block;position:relative}.menu-overlay .sub-menu{display:inline-flex;flex-direction:column;justify-content:flex-end;position:absolute;left:0;bottom:0;height:100vh;width:100%;list-style-type:none;padding:0;margin:0;z-index:100}.menu-overlay .sub-menu>li{display:block}.menu-overlay .sub-menu>li>a{display:block;position:relative;font-size:33px;line-height:2.25;font-weight:600;color:#fff}.menu-overlay .sub-menu>li>a span{position:relative;display:inline-block}@media screen and (max-width:1400px){.menu-overlay>li>a{font-size:43px;line-height:2}.menu-overlay .sub-menu>li>a{font-size:26px;line-height:2.33}}@media screen and (max-width:991px){.menu-overlay{max-width:100%}.menu-overlay>li>a{font-size:24px;line-height:2.5}.menu-overlay .sub-menu{top:0;bottom:auto;justify-content:flex-start}.menu-overlay .sub-menu>li>a{font-size:19px;line-height:2.33}}.lazy-bg{width:100%;height:100%}.overlay{position:absolute;top:0;left:0;width:100%;height:100%;opacity:0;z-index:-1}.overlay_dark{background-color:#181818;opacity:.8;mix-blend-mode:multiply}.preloader{position:fixed;top:0;left:0;width:100vw;height:100vh;opacity:0;visibility:hidden;z-index:400}.preloader__curtain{position:absolute;top:0;left:0;width:100%;height:100%}.project-backgrounds{position:fixed;top:0;left:0;z-index:-1;width:100vw;height:100vh;overflow:hidden;background-color:#232323;opacity:0;visibility:hidden}.project-backgrounds__background{position:absolute;top:0;left:0;width:100%;height:100%;background-size:cover;background-position:center center;opacity:0;visibility:hidden;transform:scale(1.05)}.project-backgrounds__overlay{z-index:0!important}[data-os-animation]{opacity:0;visibility:hidden}.section{position:relative}.section_pt{padding-top:200px}.section_pb{padding-bottom:200px}.section__headline{display:block;width:80px;height:1px;background-color:#181818;margin-bottom:10px}@media screen and (max-width:1200px){.section_pt{padding-top:140px}.section_pb{padding-bottom:140px}.section__headline{max-width:80px}}@media screen and (max-width:991px){.section_pt{padding-top:100px}.section_pb{padding-bottom:100px}}@media screen and (max-width:767px){.section_pt{padding-top:80px}.section_pb{padding-bottom:80px}.section__headline{max-width:50px}}.section-masthead__header{max-width:960px}.section-masthead__header h1{margin-top:1.75em;margin-bottom:.5em}.section-masthead__wrapper-property{margin-right:70px;margin-bottom:70px}.section-masthead__wrapper-property:last-of-type{margin-right:0}.section-masthead__properties{margin-top:70px;margin-bottom:-70px}@media screen and (max-width:1200px){.section-masthead__wrapper-property{margin-right:30px}}@media screen and (max-width:991px){.section-masthead__wrapper-property{margin-right:0}.section-masthead__wrapper-property{margin-bottom:30px}.section-masthead__properties{margin-top:30px;margin-bottom:-30px}}@media screen and (max-width:767px){.section-masthead__header h1{margin-top:40px}}.spinner{position:fixed;left:120px;bottom:calc(var(--fix-bar-vh,30px) + 15px);width:30px;height:30px;z-index:10000;-webkit-animation:rotator 1.2s ease-in-out infinite;animation:rotator 1.2s ease-in-out infinite;opacity:0;visibility:hidden}@-webkit-keyframes rotator{0%{transform:rotate(0)}100%{transform:rotate(270deg)}}@keyframes rotator{0%{transform:rotate(0)}100%{transform:rotate(270deg)}}.spinner__path{stroke:#b0b0b0;stroke-dasharray:202;stroke-dashoffset:0;transform-origin:center;-webkit-animation:dash 1.2s ease-in-out infinite;animation:dash 1.2s ease-in-out infinite}@-webkit-keyframes dash{0%{stroke-dashoffset:202;transform:rotate(0)}50%{stroke-dashoffset:50.5;transform:rotate(135deg)}100%{stroke-dashoffset:202;transform:rotate(450deg)}}@keyframes dash{0%{stroke-dashoffset:202;transform:rotate(0)}50%{stroke-dashoffset:50.5;transform:rotate(135deg)}100%{stroke-dashoffset:202;transform:rotate(450deg)}}@media screen and (max-width:1400px){.spinner{left:80px}}@media screen and (max-width:1200px){.spinner{left:30px}}.split-chars,.split-text{opacity:0;visibility:hidden}h1{font-family:Poppins,sans-serif}h6{font-family:Oswald,sans-serif}h1{font-size:54px;font-weight:600;line-height:1.59}h6{font-size:16px;font-weight:500;line-height:1.5;letter-spacing:1px;text-transform:uppercase}a{color:inherit;background-image:linear-gradient(to top,rgba(0,0,0,0) 0,rgba(0,0,0,0) 0,#888 0,rgba(0,0,0,0) 1px,rgba(0,0,0,0) 100px)}@media screen and (max-width:1400px){h1{font-size:43px}h6{font-size:16px}}@media screen and (max-width:991px){h1{font-size:28px}h6{font-size:16px}}.color-white{color:#fff!important}#js-webgl{display:none;width:1px;height:1px}@-ms-viewport{width:device-width}html{box-sizing:border-box;-ms-overflow-style:scrollbar}*,::after,::before{box-sizing:inherit}.container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto}.row{display:-ms-flexbox;display:flex;-ms-flex-wrap:wrap;flex-wrap:wrap;margin-right:-15px;margin-left:-15px}.col,.col-auto,.col-lg-auto,.col-sm-6{position:relative;width:100%;min-height:1px;padding-right:15px;padding-left:15px}.col{-ms-flex-preferred-size:0;flex-basis:0;-ms-flex-positive:1;flex-grow:1;max-width:100%}.col-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}@media (min-width:576px){.col-sm-6{-ms-flex:0 0 50%;flex:0 0 50%;max-width:50%}}@media (min-width:992px){.col-lg-auto{-ms-flex:0 0 auto;flex:0 0 auto;width:auto;max-width:none}}.d-block{display:block!important}@media (min-width:992px){.d-lg-none{display:none!important}}.justify-content-between{-ms-flex-pack:justify!important;justify-content:space-between!important}.align-items-center{-ms-flex-align:center!important;align-items:center!important}*,::after,::before{box-sizing:border-box}html{font-family:sans-serif;line-height:1.15;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%;-ms-overflow-style:scrollbar}@-ms-viewport{width:device-width}header,main,section{display:block}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol";font-size:1rem;font-weight:400;line-height:1.5;color:#212529;text-align:left;background-color:#fff}h1,h6{margin-top:0;margin-bottom:.5rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}a{color:#007bff;text-decoration:none;background-color:transparent;-webkit-text-decoration-skip:objects}svg:not(:root){overflow:hidden;vertical-align:middle}::-webkit-file-upload-button{font:inherit;-webkit-appearance:button}
+    </style>
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Oswald:500%7CPoppins:200,300,300i,400,400i,600,600i%7CMaterial+Icons" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:500%7CPoppins:200,300,300i,400,400i,600,600i%7CMaterial+Icons"></noscript>
+    <link rel="preload" href="css/vendor.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/vendor.css"></noscript>
+    <link rel="preload" href="css/main.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="css/main.css"></noscript>
+    <link rel="preload" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href="../../../stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"></noscript>
+    <script>!function(n){"use strict";n.loadCSS||(n.loadCSS=function(){});var o=loadCSS.relpreload={};if(o.support=function(){var e;try{e=n.document.createElement("link").relList.supports("preload")}catch(t){e=!1}return function(){return e}}(),o.bindMediaToggle=function(t){var e=t.media||"all";function a(){t.addEventListener?t.removeEventListener("load",a):t.attachEvent&&t.detachEvent("onload",a),t.setAttribute("onload",null),t.media=e}t.addEventListener?t.addEventListener("load",a):t.attachEvent&&t.attachEvent("onload",a),setTimeout(function(){t.rel="stylesheet",t.media="only x"}),setTimeout(a,3e3)},o.poly=function(){if(!o.support())for(var t=n.document.getElementsByTagName("link"),e=0;e<t.length;e++){var a=t[e];"preload"!==a.rel||"style"!==a.getAttribute("as")||a.getAttribute("data-loadcss")||(a.setAttribute("data-loadcss",!0),o.bindMediaToggle(a))}},!o.support()){o.poly();var t=n.setInterval(o.poly,500);n.addEventListener?n.addEventListener("load",function(){o.poly(),n.clearInterval(t)}):n.attachEvent&&n.attachEvent("onload",function(){o.poly(),n.clearInterval(t)})}"undefined"!=typeof exports?exports.loadCSS=loadCSS:n.loadCSS=loadCSS}("undefined"!=typeof global?global:this);</script>
+    <!-- ICONS-->
+    <link rel="apple-touch-icon" sizes="57x57" href="img/content/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/content/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/content/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/content/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/content/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/content/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/content/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/content/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/content/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/content/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/content/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/content/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/content/favicon-16x16.png">
+    <link rel="manifest" href="img/content/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/content/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/x-icon" href="img/content/favicon.ico">
+  </head>
+  <body data-barba="wrapper">
+    <!-- Loading Spinner-->
+    <svg class="spinner js-spinner d-lg-none d-block" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
+      <circle class="spinner__path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <!-- - Loading Spinner-->
+    <!-- Cursor follower-->
+    <div class="cursor" id="js-cursor">
+      <div class="cursor__follower">
+        <svg viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <circle id="inner" cx="50" cy="50" r="40"></circle>
+          <circle id="outter" cx="50" cy="50" r="40"></circle>
+        </svg>
+      </div>
+    </div>
+    <!-- - Cursor follower-->
+    <!-- Project hover backgrounds-->
+    <div class="project-backgrounds">
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-1.jpg" data-background-for="1"></div>
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-2.jpg" data-background-for="2"></div>
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-3.jpg" data-background-for="3"></div>
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-4.jpg" data-background-for="4"></div>
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-5.jpg" data-background-for="5"></div>
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-6.jpg" data-background-for="6"></div>
+      <div class="project-backgrounds__background lazy-bg" data-src="img/assets/projects/bg-7.jpg" data-background-for="7"></div>
+      <div class="project-backgrounds__overlay overlay overlay_dark"></div>
+    </div>
+    <!-- - Project hover backgrounds-->
+    <!-- PAGE PRELOADER -->
+    <div class="preloader">
+      <div class="preloader__curtain bg-dark-2"></div>
+    </div>
+    <!-- - PAGE PRELOADER -->
+    <!-- PAGE HEADER -->
+    <header class="header header_fixed container-fluid">
+      <div class="row justify-content-between align-items-center">
+        <div class="col-auto header__col-left"><a class="logo" href="homepage-slider-1.html">
+            <div class="logo__text">Rubenz</div></a>
+        </div>
+        <div class="col-auto header__col-right">
+          <div class="header__burger" id="js-burger">
+            <div class="header__burger-line"></div>
+            <div class="header__burger-line"></div>
+          </div>
+        </div>
+      </div>
+      <div class="header__wrapper-overlay-menu">
+        <div class="header__overlay-menu-back material-icons" id="js-submenu-back">arrow_back</div>
+        <div class="header__wrapper-menu">
+          <ul class="menu-overlay js-menu-overlay">
+            <li class="menu-item-has-children"><a href="#">
+                <div class="menu-overlay__item-wrapper"><span class="split-chars">Homepages</span></div></a>
+              <ul class="sub-menu">
+                <li><a href="homepage-slider-1.html" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Fullscreen Slider 001</span></div></a>
+                </li>
+                <li><a href="homepage-slider-2.html" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Fullscreen Slider 002</span></div></a>
+                </li>
+                <li><a href="homepage-slider-3.html" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Fullscreen Slider 003</span></div></a>
+                </li>
+                <li><a href="homepage-slider-4.html" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Fullscreen Slider 004</span></div></a>
+                </li>
+                <li><a href="homepage-portfolio-grid-1.html" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Portfolio Grid</span></div></a>
+                </li>
+              </ul>
+            </li>
+            <li class="menu-item-has-children"><a href="#">
+                <div class="menu-overlay__item-wrapper"><span class="split-chars">Portfolio</span></div></a>
+              <ul class="sub-menu">
+                <li><a href="project-1.html" data-post-id="1" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Arrigo HTML Template</span></div></a>
+                </li>
+                <li><a href="project-2.html" data-post-id="2" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Interior Design App</span></div></a>
+                </li>
+                <li><a href="project-3.html" data-post-id="3" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">The Crows Show</span></div></a>
+                </li>
+                <li><a href="project-4.html" data-post-id="4" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Enchanted Pond Side</span></div></a>
+                </li>
+                <li><a href="project-5.html" data-post-id="5" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Smart Home Sound</span></div></a>
+                </li>
+                <li><a href="project-6.html" data-post-id="6" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">Cassio Luxury Apartment</span></div></a>
+                </li>
+                <li><a href="project-7.html" data-post-id="7" data-pjax-link="overlayMenu">
+                    <div class="menu-overlay__item-wrapper"><span class="split-chars">The Underground</span></div></a>
+                </li>
+              </ul>
+            </li>
+            <li><a href="services.html" data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper"><span class="split-chars">Services</span></div></a>
+            </li>
+            <li><a href="about.html" data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper"><span class="split-chars">About</span></div></a>
+            </li>
+            <li><a href="contacts.html" data-pjax-link="overlayMenu">
+                <div class="menu-overlay__item-wrapper"><span class="split-chars">Contacts</span></div></a>
+            </li>
+          </ul>
+        </div>
+        <!-- - menu -->
+        <div class="header__wrapper-overlay-widgets color-white bg-dark">
+          <div class="header__wrapper-property">
+            <div class="figure-property">
+              <div class="figure-property__wrapper-heading">
+                <h6 class="split-text">Phones</h6>
+              </div>
+              <div class="figure-property__content">
+                <ul class="figure-property__list">
+                  <li class="figure-property__item">
+                    <div class="split-text">+1 504-558-6739<br>+1 918-806-0749</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__wrapper-property">
+            <div class="figure-property">
+              <div class="figure-property__wrapper-heading">
+                <h6 class="split-text">E-mail</h6>
+              </div>
+              <div class="figure-property__content">
+                <ul class="figure-property__list">
+                  <li class="figure-property__item">
+                    <div class="split-text"><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#d2a1a7a2a2bda0a692b3a0a6b7bfa1b7bfb9bbbcfcb1bdbf"><span class="__cf_email__" data-cfemail="1f6c6a6f6f706d6b5f7e6d6b7a726c7a72747671317c7072">[email&#160;protected]</span></a></div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="header__wrapper-property">
+            <div class="figure-property">
+              <div class="figure-property__wrapper-heading">
+                <h6 class="split-text">Address</h6>
+              </div>
+              <div class="figure-property__content">
+                <ul class="figure-property__list">
+                  <li class="figure-property__item">
+                    <div class="split-text">4575 Redbud Drive <br>Brooklyn <br>NY 11206 USA</div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- - information -->
+      </div>
+    </header>
+    <!-- - PAGE HEADER -->
+    <!-- PAGE MAIN-->
+    <main class="page-wrapper" id="js-smooth-scroll" data-barba="container" data-barba-namespace="light">
+      <!-- section MASTHEAD -->
+      <section class="section section-masthead section_pt section_pb" data-os-animation="data-os-animation">
+        <div class="container-fluid">
+          <header class="row section-masthead__header">
+            <div class="col">
+              <h1 class="split-chars">Services</h1>
+              <div class="section__headline"></div>
+            </div>
+          </header>
+          <div class="row section-masthead__properties">
+            <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+              <div class="figure-property">
+                <div class="figure-property__wrapper-heading">
+                  <h6 class="split-text">Web Design</h6>
+                </div>
+                <div class="figure-property__content">
+                  <ul class="figure-property__list">
+                    <li class="figure-property__item">
+                      <div class="split-text">UI / UX Design</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Art Direction</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Front-end</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Back-end</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Research & Analytics</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+              <div class="figure-property">
+                <div class="figure-property__wrapper-heading">
+                  <h6 class="split-text">Graphic Design</h6>
+                </div>
+                <div class="figure-property__content">
+                  <ul class="figure-property__list">
+                    <li class="figure-property__item">
+                      <div class="split-text">Illustrations</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Banners</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Art Direction</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+              <div class="figure-property">
+                <div class="figure-property__wrapper-heading">
+                  <h6 class="split-text">Brand &amp; Marketing</h6>
+                </div>
+                <div class="figure-property__content">
+                  <ul class="figure-property__list">
+                    <li class="figure-property__item">
+                      <div class="split-text">Brand Activation</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Creative Strategy</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">SM Guidelines</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Corporate Identity</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-auto col-sm-6 section-masthead__wrapper-property">
+              <div class="figure-property">
+                <div class="figure-property__wrapper-heading">
+                  <h6 class="split-text">Video Production</h6>
+                </div>
+                <div class="figure-property__content">
+                  <ul class="figure-property__list">
+                    <li class="figure-property__item">
+                      <div class="split-text">Commercial Filming</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Post Production</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Motion Design</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">3D Animations</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Experimental Installations</div>
+                    </li>
+                    <li class="figure-property__item">
+                      <div class="split-text">Multimedia Content</div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - section MASTHEAD -->
+      <!-- section TESTIMONIALS -->
+      <section class="section section-content bg-light section_pt section_pb" data-os-animation="data-os-animation">
+        <div class="container section-content__container">
+          <div class="row justify-content-between section-content__row">
+            <header class="col-lg-5 section__header section-content__inner_header">
+              <h2 class="split-chars">What clients say</h2>
+              <div class="section__headline"></div>
+            </header>
+            <div class="col-lg-6 section-content__inner section-content__inner_text">
+              <h3 class="split-text">We develop outstanding creative campaigns for our clients to make them, and keep them, the top brands in their respective markets.</h3>
+            </div>
+          </div>
+          <div class="section-content__main-content">
+            <div class="section-content__wrapper-item">
+              <div class="slider-testimonials js-slider-testimonials">
+                <div class="slider slider-header-testimonials swiper-container js-slider-testimonials__header">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-header-testimonials__slide"><span>Martin Harrington</span></div>
+                    <div class="swiper-slide slider-header-testimonials__slide"><span>Iva Newton</span></div>
+                    <div class="swiper-slide slider-header-testimonials__slide"><span>Aaron Wilkerson</span></div>
+                    <div class="swiper-slide slider-header-testimonials__slide"><span>Roger Ramsey</span></div>
+                    <div class="swiper-slide slider-header-testimonials__slide"><span>Cassio Esfandiari</span></div>
+                  </div>
+                </div>
+                <!-- - slider header testimonials -->
+                <div class="slider swiper-container js-slider-testimonials__items">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide slider-testimonials__slide">
+                      <div class="slider-testimonials__wrapper-avatar"><img class="swiper-lazy" data-src="img/assets/avatars/avatar-1.jpg" src="#" alt></div>
+                      <div class="slider-testimonials__wrapper-text">
+                        <blockquote>For all our design and production needs we have always trusted Rubenz Agency for more than 4 years now. Exceptional workmanship, commitment to client satisfaction and their timely delivery are what has kept us stuck with them. They are cool guys too!</blockquote>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-testimonials__slide">
+                      <div class="slider-testimonials__wrapper-avatar"><img class="swiper-lazy" data-src="img/assets/avatars/avatar-5.jpg" src="#" alt></div>
+                      <div class="slider-testimonials__wrapper-text">
+                        <blockquote>Set property addition building put likewise get. Of will at sell well at as. Too want but tall nay like old. Removing yourself be in answered he. Consider occasion get improved him she eat. Letter by lively oh denote an.</blockquote>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-testimonials__slide">
+                      <div class="slider-testimonials__wrapper-avatar"><img class="swiper-lazy" data-src="img/assets/avatars/avatar-3.jpg" src="#" alt></div>
+                      <div class="slider-testimonials__wrapper-text">
+                        <blockquote>Way building not get formerly her peculiar. Up uncommonly prosperous sentiments simplicity acceptance to so. Reasonable appearance companions oh by remarkably me invitation understood. Pursuit elderly ask perhaps all.</blockquote>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-testimonials__slide">
+                      <div class="slider-testimonials__wrapper-avatar"><img class="swiper-lazy" data-src="img/assets/avatars/avatar-4.jpg" src="#" alt></div>
+                      <div class="slider-testimonials__wrapper-text">
+                        <blockquote>Whole wound wrote at whose to style in. Figure ye innate former do so we. Shutters but sir yourself provided you required his. So neither related he am do believe. Nothing but you hundred had use regular. Fat sportsmen arranging preferred can. Busy paid like is oh. Dinner our ask talent her age hardly. Neglected collected an attention listening do abilities.</blockquote>
+                      </div>
+                    </div>
+                    <div class="swiper-slide slider-testimonials__slide">
+                      <div class="slider-testimonials__wrapper-avatar"><img class="swiper-lazy" data-src="img/assets/avatars/avatar-2.jpg" src="#" alt></div>
+                      <div class="slider-testimonials__wrapper-text">
+                        <blockquote>At ourselves direction believing do he departure. Celebrated her had sentiments understood are projection set. Possession ye no mr unaffected remarkably at. Wrote house in never fruit up. Pasture imagine my garrets an he. However distant she request behaved see nothing. Talking settled at pleased an of me brother weather.</blockquote>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="slider-testimonials__footer">
+                    <div class="slider__dots js-slider-testimonials__dots">
+                      <div class="slider__dot slider__dot_active"></div>
+                      <div class="slider__dot"></div>
+                      <div class="slider__dot"></div>
+                      <div class="slider__dot"></div>
+                    </div>
+                  </div>
+                  <!-- - slider testimonials -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - section TESTIMONIALS -->
+      <!-- section VIDEO -->
+      <section class="section section-video section_pt section_pb" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.15"><a class="container section-video__link color-white mfp-iframe js-video" href="https://www.youtube.com/watch?v=BsekcY04xvQ">
+          <h2>Our work process</h2>
+          <div class="section-video__icon material-icons">play_arrow</div></a>
+        <div class="lazy-bg art-parallax__bg" data-src="img/assets/sectionVideo/bg-video.jpg">
+          <div class="overlay overlay_dark"></div>
+        </div>
+      </section>
+      <!-- - section VIDEO -->
+      <!-- section PRICING PLANS -->
+      <section class="section section-content bg-light-grey section_pt section_pb" data-os-animation="data-os-animation">
+        <div class="container section-content__container">
+          <div class="row justify-content-between section-content__row">
+            <header class="col-lg-5 section__header section-content__inner_header">
+              <h2 class="split-chars">Pricing Plans</h2>
+              <div class="section__headline"></div>
+            </header>
+            <div class="col-lg-6 section-content__inner section-content__inner_text">
+              <h3 class="split-text">Two dear held mrs feet view her old fine. Bore can led than how has rank. Discovery any extensive has commanded direction.</h3>
+            </div>
+          </div>
+          <div class="section-content__main-content">
+            <div class="row">
+              <div class="col-lg-4 section-content__wrapper-item">
+                <div class="figure-pricing">
+                  <div class="figure-pricing__header">
+                    <h4>Starter</h4>
+                    <div class="figure-pricing__cost">
+                      <div class="figure-pricing__cost-sign figure-pricing__cost-sign_before">$</div>
+                      <div class="figure-pricing__amount">9</div>
+                    </div>
+                  </div>
+                  <ul class="figure-pricing__features">
+                    <li class="figure-pricing__feature">Free Setup</li>
+                    <li class="figure-pricing__feature">Single Project</li>
+                    <li class="figure-pricing__feature">1 Collaborator</li>
+                    <li class="figure-pricing__feature">100 Mb in Cloud</li>
+                    <li class="figure-pricing__feature">1 Integration</li>
+                    <li class="figure-pricing__feature">10 Gb Bandwidth</li>
+                  </ul>
+                  <div class="figure-pricing__wrapper-button"><a class="button button_fullwidth button_bordered button_dark" href="#">Select Plan</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 section-content__wrapper-item">
+                <div class="figure-pricing figure-pricing_featured">
+                  <div class="figure-pricing__header">
+                    <h4>Business</h4>
+                    <div class="figure-pricing__cost">
+                      <div class="figure-pricing__cost-sign figure-pricing__cost-sign_before">$</div>
+                      <div class="figure-pricing__amount">19</div>
+                    </div>
+                  </div>
+                  <ul class="figure-pricing__features">
+                    <li class="figure-pricing__feature">Free Setup</li>
+                    <li class="figure-pricing__feature">5 Projects</li>
+                    <li class="figure-pricing__feature">15 Collaborator</li>
+                    <li class="figure-pricing__feature">10 Gb in Cloud</li>
+                    <li class="figure-pricing__feature">5 Integration</li>
+                    <li class="figure-pricing__feature">50 Gb Bandwidth</li>
+                    <li class="figure-pricing__feature">Priority Support</li>
+                  </ul>
+                  <div class="figure-pricing__wrapper-button"><a class="button button_fullwidth button_solid button_dark" href="#">Select Plan</a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 section-content__wrapper-item">
+                <div class="figure-pricing">
+                  <div class="figure-pricing__header">
+                    <h4>VIP</h4>
+                    <div class="figure-pricing__cost">
+                      <div class="figure-pricing__cost-sign figure-pricing__cost-sign_before">$</div>
+                      <div class="figure-pricing__amount">29</div>
+                    </div>
+                  </div>
+                  <ul class="figure-pricing__features">
+                    <li class="figure-pricing__feature">Free Setup</li>
+                    <li class="figure-pricing__feature">Unlimited Project</li>
+                    <li class="figure-pricing__feature">Unlimited Collaborator</li>
+                    <li class="figure-pricing__feature">50 Gb in Cloud</li>
+                    <li class="figure-pricing__feature">Unlimited Integration</li>
+                    <li class="figure-pricing__feature">1 Tb Bandwidth</li>
+                    <li class="figure-pricing__feature">Premium Support</li>
+                    <li class="figure-pricing__feature">Daily Reports</li>
+                  </ul>
+                  <div class="figure-pricing__wrapper-button"><a class="button button_fullwidth button_bordered button_dark" href="#">Select Plan</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- - section PRICING PLANS -->
+      <footer class="footer container-fluid">
+        <div class="footer__area-primary">
+          <div class="row">
+            <div class="col-lg-4 footer__col">
+              <section class="widget widget_ruben_logo"><a class="logo" href="homepage-slider-1.html">
+                  <div class="logo__text">Rubenz</div></a>
+                <p>We are a multidisciplinary digital agency based in New York</p>
+              </section>
+            </div>
+            <div class="col-lg-4 footer__col">
+              <section class="widget widget_ruben_social">
+                <ul class="social">
+                  <li class="social__item"><a class="fa fa-facebook-f" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-twitter" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-instagram" href="#"></a></li>
+                  <li class="social__item"><a class="fa fa-behance" href="#"></a></li>
+                </ul>
+              </section>
+            </div>
+            <div class="col-lg-4 footer__col">
+              <section class="widget widget_ruben_contacts">
+                <p>+1 504-558-6739<br>+1 918-806-0749</p>
+                <p><a href="https://artemsemkin.com/cdn-cgi/l/email-protection#91f9f4fdfdfed1f4e9f0fce1fdf4bff2fefc"><span class="__cf_email__" data-cfemail="7c14191010133c0e091e19121d1b19121f05521f1311">[email&#160;protected]</span></a></p>
+              </section>
+            </div>
+          </div>
+        </div>
+        <div class="footer__area-secondary">
+          <div class="row justify-content-between align-items-center">
+            <div class="col-12 footer__col">
+              <section class="widget widget_ruben_copyright"><small>© 2020 Rubenz – Creative Portfolio AJAX HTML5 Template. By <a href="https://artemsemkin.com/" target="_blank">Artem Semkin.</a></small>
+              </section>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <canvas id="js-webgl"></canvas>
+    <!-- - PAGE MAIN-->
+    <!-- GOOGLE MAPS -->
+    <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCMDrMzaeoz8AqpXNuaIpCR8OWjZFY6z0A"></script>
+    <!-- - GOOGLE MAPS -->
+    <!-- VENDOR SCRIPTS -->
+    <script src="js/vendor.js"></script>
+    <!-- - VENDOR SCRIPTS -->
+    <!-- COMPONENTS -->
+    <script src="js/components.js"></script>
+    <!-- - COMPONENTS -->
+  </body>
+</html>
