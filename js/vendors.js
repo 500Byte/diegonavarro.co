@@ -2778,7 +2778,7 @@
         this.history.paths = R.getPathValues(), this.history.scrollToSlide(this.params.speed, this.history.paths.value, !1)
       },
       getPathValues: function () {
-        var e = J.location.pathname.slice(1).split("http://stukram.mikhailmasterov.com/").filter(function (e) {
+        var e = J.location.pathname.slice(1).split("https://diegonavarro.co/").filter(function (e) {
             return "" !== e
           }),
           t = e.length;
