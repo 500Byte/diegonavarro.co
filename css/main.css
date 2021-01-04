@@ -30,14 +30,14 @@ body{
 
 body.dark-theme{
     --color-primary: #17ed90;
-    --color-secondary: #243133;
+    --color-secondary: #202020;
     --color-accent: #12cdea;
     --font-color: #ffffff;
 }
 @media (prefers-color-scheme: dark) {
     body {
         --color-primary: #17ed90;
-        --color-secondary: #243133;
+        --color-secondary: #202020;
         --color-accent: #12cdea;
         --font-color: #ffffff;
         }
@@ -5133,7 +5133,7 @@ a:focus {
     content: "";
     height: 300%;
     left: -50%;
-    opacity: .1;
+    opacity: .05;
     position: fixed;
     top: -110%;
     width: 300%;
