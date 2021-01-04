@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="theme-dark">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title>Rubenz – Creative Minimal AJAX Portfolio Template</title>
+    <title>Diego Navarro</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta content="telephone=no" name="format-detection">
     <meta name="HandheldFriendly" content="true">
@@ -39,6 +39,7 @@
     <meta name="theme-color" content="#ffffff">
     <link rel="icon" type="image/x-icon" href="img/content/favicon.ico">
   </head>
+  <div class="ruido"></div>
   <body data-barba="wrapper">
     <!-- Loading Spinner-->
     <svg class="spinner js-spinner d-lg-none d-block" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg">
@@ -79,6 +80,13 @@
             <div class="logo__text">Rubenz</div></a>
         </div>
         <div class="col-auto header__col-right">
+          <!-- DARK / LIGHT SWITCH -->
+          <div class="toggle-box">
+            <input type="checkbox" onchange="toggleTheme()" id="toggle-box-checkbox" />
+            <label for="toggle-box-checkbox" class="toggle-box-label-left"></label>
+            <label for="toggle-box-checkbox" class="toggle-box-label"></label>
+          </div>
+          <!-- DARK / LIGHT SWITCH -->
           <div class="header__burger" id="js-burger">
             <div class="header__burger-line"></div>
             <div class="header__burger-line"></div>
@@ -215,7 +223,6 @@
           <div class="grid grid_120 js-grid">
             <div class="col-lg-6 grid__item grid__item_120 grid__sizer js-grid__sizer"></div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-1.html" data-pjax-link="masonryGrid" data-post-id="1">
-                <div class="figure-portfolio__counter">001</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-1.jpg" src="#" alt width="1920" height="1080"></div>
@@ -224,7 +231,6 @@
                 </div></a>
             </div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-2.html" data-pjax-link="masonryGrid" data-post-id="2">
-                <div class="figure-portfolio__counter">002</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-2.jpg" src="#" alt width="1920" height="1080"></div>
@@ -233,7 +239,6 @@
                 </div></a>
             </div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-3.html" data-pjax-link="masonryGrid" data-post-id="3">
-                <div class="figure-portfolio__counter">003</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-3.jpg" src="#" alt width="1920" height="1080"></div>
@@ -242,7 +247,6 @@
                 </div></a>
             </div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-4.html" data-pjax-link="masonryGrid" data-post-id="4">
-                <div class="figure-portfolio__counter">004</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-4.jpg" src="#" alt width="1920" height="1080"></div>
@@ -251,7 +255,6 @@
                 </div></a>
             </div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-5.html" data-pjax-link="masonryGrid" data-post-id="5">
-                <div class="figure-portfolio__counter">005</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-5.jpg" src="#" alt width="1920" height="1080"></div>
@@ -260,7 +263,6 @@
                 </div></a>
             </div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-6.html" data-pjax-link="masonryGrid" data-post-id="6">
-                <div class="figure-portfolio__counter">006</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-6.jpg" src="#" alt width="1920" height="1080"></div>
@@ -269,7 +271,6 @@
                 </div></a>
             </div>
             <div class="col-lg-6 grid__item grid__item_120 js-grid__item"><a class="figure-portfolio" href="project-7.html" data-pjax-link="masonryGrid" data-post-id="7">
-                <div class="figure-portfolio__counter">007</div>
                 <div class="figure-portfolio__content">
                   <div class="figure-portfolio__wrapper-img" data-art-parallax="data-art-parallax" data-art-parallax-factor="0.1">
                     <div class="lazy"><img data-src="img/assets/projects/bg-7.jpg" src="#" alt width="1920" height="1080"></div>
