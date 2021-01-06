@@ -42,7 +42,7 @@ body.dark-theme{
         --color-secondary: #202020;
         --color-accent: #12cdea;
         --font-color: #ffffff;
-        --logo: url(/img/general/logo-.svg);
+        --logo: url(/img/general/logo.svg);
         }
 
         body.light-theme {
@@ -986,7 +986,7 @@ div[class*='bg-image-'] {
 }
 
 .figure-portfolio__content {
-    text-align: right
+    text-align: left
 }
 
 .figure-portfolio__content h3 {
