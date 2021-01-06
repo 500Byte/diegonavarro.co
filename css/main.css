@@ -17,6 +17,7 @@ body {
     --color-secondary: #fbfbfe;
     --color-accent: #fd6f53;
     --font-color: #333;
+    --logo: url(/img/general/logo-dark.svg);
     font-size: 100%;
     line-height: 1.75;
     overflow-x: hidden;
@@ -33,6 +34,7 @@ body.dark-theme{
     --color-secondary: #202020;
     --color-accent: #12cdea;
     --font-color: #ffffff;
+    --logo: url(/img/general/logo.svg);
 }
 @media (prefers-color-scheme: dark) {
     body {
@@ -40,6 +42,7 @@ body.dark-theme{
         --color-secondary: #202020;
         --color-accent: #12cdea;
         --font-color: #ffffff;
+        --logo: url(/img/general/logo-.svg);
         }
 
         body.light-theme {
@@ -47,6 +50,7 @@ body.dark-theme{
             --color-secondary: #fbfbfe;
             --color-accent: #fd6f53;
             --font-color: #333;
+            --logo: url(/img/general/logo-dark.svg);
         }
 }
 
@@ -5358,4 +5362,12 @@ a:focus {
   }
   .toggle-box input[type=checkbox]:checked + .toggle-box-label-left + .toggle-box-label {
     font-weight: bold;
+  }
+
+  .logo__text {
+      background: var(--logo);
+      width: 60px;
+      padding: 60px 0 0 0;
+      height: 0;
+      overflow: hidden;
   }
