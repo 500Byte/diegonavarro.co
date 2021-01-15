@@ -3,7 +3,7 @@
 		"use strict";
 		
 	// PRELOADER
-		loader()
+		 /*loader()
 		function loader(_success) {
 			var obj = document.querySelector('.preloader'),
 			inner = document.querySelector('.inner .percentage'),
@@ -24,14 +24,8 @@
 						}
 					}
 				}, 20);
-		}
+		}*/
 
-		
-	// HAMBURGER AUDIO
-			document.getElementById("hamburger-menu").addEventListener('click', function(e) {
-			document.getElementById("hamburger-hover").play();
-	  	});
-		
 	// LOGO RANDOM FADE
 		$(function(){
 		  // time between image rotate
