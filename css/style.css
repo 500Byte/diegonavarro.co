@@ -1005,7 +1005,6 @@ moe .color-dark .left-side ul li a:hover {
 
 /* HEADER */
 .header {
-  max-width: 1200px;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
