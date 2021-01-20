@@ -2830,14 +2830,13 @@ moe .color-dark .left-side ul li a:hover {
     display: unset;
   }
 
-  .header .headlines h1 {
+  .header .headlines {
     margin: 0;
     padding: 0 30px;
   }
 
   .header .headlines p {
     margin-top: 20px;
-    padding: 0 30px;
   }
 
   .slider .swiper-container .slide-inner {
