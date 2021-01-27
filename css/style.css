@@ -223,7 +223,9 @@
 
 :root {
   --dark: #151515;
+  --dark-subtle: #777777;
   --light: #fff;
+  --font-primary: "TT Commons", sans-serif;
 }
 
 /* BODY */
@@ -232,14 +234,15 @@
 }
 
 html {
-  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 body {
   margin: 0;
   padding-left: 150px;
   padding-right: 50px;
-  font-family: "TT Commons";
+  font-family: var(--font-primary);
   font-size: 17px;
   color: var(--dark);
   -webkit-transition: all 0.4s ease-in-out;
@@ -247,9 +250,26 @@ body {
   -ms-transition: all 0.4s ease-in-out;
   -o-transition: all 0.4s ease-in-out;
   transition: all 0.4s ease-in-out;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: optimizeLegibility;
-  -moz-osx-font-smoothing: grayscale;
+}
+
+::-moz-selection {
+  color: var(--light);
+  background-color: var(--dark);
+  text-shadow: none;
+}
+
+::selection {
+  color: var(--light);
+  background-color: var(--dark);
+  text-shadow: none;
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--dark);
 }
 
 /* LINKS */
@@ -2956,4 +2976,14 @@ moe .color-dark .left-side ul li a:hover {
   .footer .sub-footer ul {
     margin-bottom: 15px;
   }
+}
+
+.circle {
+	position: absolute;
+  border: solid 1px var(--dark);
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%;
+  z-index: 999;
+  pointer-events: none;
 }
