@@ -2980,10 +2980,11 @@ moe .color-dark .left-side ul li a:hover {
 
 .circle {
 	position: absolute;
-  border: solid 1px var(--dark);
 	width: 60px; 
 	height: 60px; 
   border-radius: 50%;
+  background-color: #888888;
+  opacity: 0.25;
   z-index: 999;
   pointer-events: none;
 }
