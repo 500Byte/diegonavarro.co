@@ -457,7 +457,7 @@
 @media only screen and (max-width: 767px) {
 	
 	#showcase-carousel-holder #showcase-slider .swiper-slide {
-		height: 55vw;
+		height: 65vh;
 		width: 100% !important;
 	}
 	

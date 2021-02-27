@@ -3077,6 +3077,7 @@ Primary use:	Showcase Portfolio
 	
 	#logo {
 		left: 30px;
+		top: 15px;
 	}
 	
 	.flexnav {
@@ -3297,11 +3298,11 @@ Primary use:	Showcase Portfolio
 	
 	#logo {
 		left: 20px;
-		top: 15px;
+		top: 30px;
 	}
-	
+
 	.button-wrap.right.menu {
-		right: -10px;
+		top: 15px;
 	}
 	
 	.flexnav {
@@ -3337,6 +3338,7 @@ Primary use:	Showcase Portfolio
 	#footer-container {
 		padding: 0px;
 		margin:0;
+		margin-bottom: 15px;
 	}
 	
 	footer.showcase-footer #footer-container {
@@ -3388,10 +3390,7 @@ Primary use:	Showcase Portfolio
 	footer.showcase-footer .socials-wrap {
 		display:none;
 	}
-	
-	.button-text {
-		display:none;
-	}
+
 	
 	#main-page-content .button-text {
 		display:block;
