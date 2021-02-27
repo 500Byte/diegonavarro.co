@@ -1241,7 +1241,7 @@ Primary use:	Showcase Portfolio
 	}
 	
 	.percentage::before {
-		content: "Loaded";
+		content: "Cargado";
 		width: 40px;
 		height: 20px;
 		font-size: 12px;
