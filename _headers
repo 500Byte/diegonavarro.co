@@ -1,3 +1,6 @@
+/*
+Access-Control-Allow-Origin: *
+
 # Cache fonts forever
 /fonts/*
   Cache-Control: public
