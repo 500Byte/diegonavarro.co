@@ -29635,7 +29635,7 @@
 			var texture = new CubeTexture();
 
 			var loader = new ImageLoader(this.manager);
-			loader.setCrossOrigin("");
+			loader.setCrossOrigin('anonymous');
 			loader.setPath(this.path);
 
 			var loaded = 0;
@@ -29703,7 +29703,7 @@
 			var texture = new Texture();
 
 			var loader = new ImageLoader(this.manager);
-			loader.setCrossOrigin('');
+			loader.setCrossOrigin('anonymous');
 			loader.setWithCredentials(this.withCredentials);
 			loader.setPath(this.path);
 			loader.load(url, function (image) {
@@ -33367,7 +33367,7 @@
 				var manager = new LoadingManager(onLoad);
 
 				var loader = new ImageLoader(manager);
-				loader.setCrossOrigin('');
+				loader.setCrossOrigin('anonymous');
 
 				for (var i = 0, l = json.length; i < l; i++) {
 
@@ -42891,7 +42891,7 @@
 			console.warn('THREE.ImageUtils.loadTexture has been deprecated. Use THREE.TextureLoader() instead.');
 
 			var loader = new TextureLoader();
-			loader.setCrossOrigin('');
+			loader.setCrossOrigin('anonymous');
 
 			var texture = loader.load(url, onLoad, undefined, onError);
 
@@ -42906,7 +42906,7 @@
 			console.warn('THREE.ImageUtils.loadTextureCube has been deprecated. Use THREE.CubeTextureLoader() instead.');
 
 			var loader = new CubeTextureLoader();
-			loader.setCrossOrigin('');
+			loader.setCrossOrigin('anonymous');
 
 			var texture = loader.load(urls, onLoad, undefined, onError);
 
