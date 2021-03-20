@@ -29635,7 +29635,7 @@
 			var texture = new CubeTexture();
 
 			var loader = new ImageLoader(this.manager);
-			loader.("");
+			loader.setCrossOrigin("");
 			loader.setPath(this.path);
 
 			var loaded = 0;
