@@ -1,29 +1,239 @@
 <!DOCTYPE html>
-<html lang="es" >
-  
-<head>
-  <meta charset="UTF-8">
-  <title>Hola</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" href="./style.css" >
+<html lang="es">
 
-  <!--Favicon-->
-  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-  <link rel="manifest" href="/site.webmanifest">
-  <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
-  <meta name="apple-mobile-web-app-title" content="Diego Navarro">
-  <meta name="application-name" content="Diego Navarro">
-  <meta name="msapplication-TileColor" content="#2d2d2d">
-  <meta name="theme-color" content="#ffffff">
+<head>
+
+    <title>Diego Navarro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' />
+    <meta name="description" content=" " />
+    <meta name="author" content="Diego Navarro">
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/ico" href="favicon.ico" />
+    <link href="style.css" rel="stylesheet" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
 </head>
 
-<body>
-  <div class="ruido"></div>
-  <div class="hello">👋</div>
-  <div class="world">🌎</div>  
+<body class="hidden hidden-ball smooth-scroll drag-scroll">
+
+    <main>
+        <!-- Preloader -->
+        <div class="preloader-wrap" data-firstline="Por favor" data-secondline="espere">
+            <div class="outer">
+                <div class="inner">
+                    <div class="preloader-marquee-mask">
+                        <div class="preloader-marquee-wrapper">
+                            <div class="preloader-marquee" data-text="Cargando Cargando Cargando Cargando Cargando Cargando Cargando ">Cargando Cargando Cargando Cargando Cargando Cargando Cargando </div>
+                        </div>
+                    </div>
+
+                    <div class="preloader-marquee-wrapper stroked">
+                        <div class="preloader-marquee" data-text="Cargando Cargando Cargando Cargando Cargando Cargando Cargando ">Cargando Cargando Cargando Cargando Cargando Cargando Cargando </div>
+                    </div>
+
+                    <div class="percentage-wrapper">
+                        <div class="percentage" id="precent"></div>
+                    </div>
+                    <div class="trackbar">
+                        <div class="loadbar"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--/Preloader -->
+
+        <div class="cd-index cd-main-content">
+
+            <!-- Page Content -->
+            <div id="page-content" class="light-content" data-bgcolor="#141414">
+
+                <!-- Header -->
+                <header class="fullscreen-menu">
+                    <div id="header-container">
+
+                        <!-- Logo -->
+                        <div id="logo" class="hide-ball disable-drag">
+                            <a class="ajax-link" data-type="page-transition" href="index.html">
+                                <img class="black-logo" src="images/logo.png" alt="Diego Navarro Logo">
+                                <img class="white-logo" src="images/logo-white.png" alt="Diego Navarro Logo">
+                            </a>
+                        </div>
+                        <!--/Logo -->
+
+                    </div>
+                </header>
+                <!--/Header -->
+
+                <!-- Content Scroll -->
+                <div id="content-scroll">
+
+                    <!-- Main -->
+                    <div id="main">
+
+                        <!-- Main Content -->
+                        <div id="main-content">
+
+                            <!-- Showcase Slider Holder -->
+                            <div id="showcase-carousel-holder" class="disable-drag">
+                                <div id="itemsWrapperLinks">
+
+                                    <!-- Showcase Slider -->
+                                    <div id="showcase-slider" class="swiper-container">
+                                        <div id="itemsWrapper" class="swiper-wrapper">
+
+                                            <div class="swiper-slide" data-slide="01">
+                                                <div class="img-mask">
+                                                    <div class="section-image"><img src="images/01hero.webp" class="item-image grid__item-img" alt=""></div>
+                                                    <img class="grid__item-img grid__item-img--large" src="images/01hero.webp" />
+                                                </div>
+                                                <div class="move-caption">
+                                                    <div class="outer">
+                                                        <div class="inner">
+                                                            <div class="move-title" data-swiper-parallax-x="-200%"><span>ACE</span></div>
+                                                            <a data-type="page-transition" href="project01.html"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="move-caption stroked">
+                                                    <div class="outer">
+                                                        <div class="inner">
+                                                            <div class="move-title thumb-link" data-swiper-parallax-x="-200%" data-firstline="Ver" data-secondline="Proyecto"><span>ACE</span></div>
+                                                            <div class="subtitle" data-swiper-parallax-x="-60%"><span>Diseño web, Branding</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide" data-slide="02">
+                                                <div class="img-mask">
+                                                    <div class="section-image"><img class="item-image grid__item-img" src="images/projects/vento/vento-80.jpg" alt=""></div>
+                                                    <img class="grid__item-img grid__item-img--large" src="images/projects/vento/vento-80.jpg" />
+                                                </div>
+                                                <div class="move-caption">
+                                                    <div class="outer">
+                                                        <div class="inner">
+                                                            <div class="move-title" data-swiper-parallax-x="-200%"><span>Vento</span></div>
+                                                            <a data-type="page-transition" href="project02.html"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="move-caption stroked">
+                                                    <div class="outer">
+                                                        <div class="inner">
+                                                            <div class="move-title thumb-link" data-swiper-parallax-x="-200%" data-firstline="Ver" data-secondline="Proyecto"><span>Vento</span></div>
+                                                            <div class="subtitle" data-swiper-parallax-x="-60%"><span>Diseño web</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="swiper-slide" data-slide="03">
+                                                <div class="img-mask">
+                                                    <div class="section-image"><img class="item-image grid__item-img" src="images/03hero.jpg" alt=""></div>
+                                                    <img class="grid__item-img grid__item-img--large" src="images/03hero.jpg" />
+                                                </div>
+                                                <div class="move-caption">
+                                                    <div class="outer">
+                                                        <div class="inner">
+                                                            <div class="move-title" data-swiper-parallax-x="-200%"><span>Logofolio</span></div>
+                                                            <a data-type="page-transition" href="project03.html"></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="move-caption stroked">
+                                                    <div class="outer">
+                                                        <div class="inner">
+                                                            <div class="move-title thumb-link" data-swiper-parallax-x="-200%" data-firstline="Ver" data-secondline="Proyecto"><span>Logofolio</span></div>
+                                                            <div class="subtitle" data-swiper-parallax-x="-60%"><span>Branding</span></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                    <!-- Showcase Slider -->
+
+                                </div>
+                            </div>
+
+                            <!-- Showcase Slider Holder -->
+
+                        </div>
+
+                        <!--/Main Content -->
+
+                    </div>
+
+                    <!--/Main -->
+
+                    <!-- Footer -->
+
+                    <footer class="hidden">
+                        <div id="footer-container">
+
+                            <div class="button-wrap left disable-drag swiper-prev">
+                                <div class="icon-wrap parallax-wrap">
+                                    <div class="button-icon parallax-element">
+                                        <i class="fa fa-angle-left"></i>
+                                    </div>
+                                </div>
+                                <div class="button-text sticky left"><span data-hover="Anterior">Anterior</span></div>
+                            </div>
+
+                            <div class="swiper-pagination disable-drag"></div>
+
+                            <div class="button-wrap right disable-drag swiper-next">
+                                <div class="icon-wrap parallax-wrap">
+                                    <div class="button-icon parallax-element">
+                                        <i class="fa fa-angle-right"></i>
+                                    </div>
+                                </div>
+                                <div class="button-text sticky right"><span data-hover="Siguiente">Siguiente</span></div>
+                            </div>
+
+                        </div>
+                    </footer>
+
+                    <!--/Footer -->
+
+                </div>
+
+                <!--/Content Scroll -->
+
+                <div id="app"></div>
+
+            </div>
+
+            <!--/Page Content -->
+
+        </div>
+    </main>
+
+    <div class="cd-cover-layer"></div>
+    <div id="magic-cursor">
+        <div id="ball">
+            <div id="ball-drag"></div>
+            <div id="ball-loader"></div>
+        </div>
+    </div>
+    <div id="clone-image"></div>
+    <div id="rotate-device"></div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/utils/Draggable.min.js"></script>
+    <script src='js/three.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.js'></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/scripts.js"></script>
+
 </body>
 
 </html>
