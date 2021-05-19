@@ -139,6 +139,14 @@ class Mesh {
     this.uniforms.time.value += 0.01;
   }
 
+  _setGui() {
+    const parameter = {
+      xScale: this.xScale,
+      yScale: this.yScale,
+      distortion: this.distortion
+    }
+    
+  }
 
   onRaf() {
     this._render();
